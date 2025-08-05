@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/process-image.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/process-image",
+      "dest": "/api/process-image.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
