@@ -14,7 +14,7 @@ export default async function handler(req, res) {
         try {
 
             //fetch the image with the url
-            const imageBuffer = await fetch(url).then(res => res.bffer());
+            const imageBuffer = await fetch(url).then(res => res.arrayBuffer());
 
             //optimize
             const optimizedImage = await sharp(imageBuffer)
